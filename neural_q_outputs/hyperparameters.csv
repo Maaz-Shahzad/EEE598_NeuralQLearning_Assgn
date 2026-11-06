@@ -1,0 +1,17 @@
+Hyperparameter,Value
+State encoding,8-D one-hot
+Network,8 -> 32 ReLU -> 32 ReLU -> 7 linear
+Trainable parameters,1575
+Optimizer,Adam
+Learning rate,0.001
+Loss,Mean squared error
+Discount factor,1.0
+Replay capacity,10000
+Replay warm-up,200
+Batch size,32
+Optimization frequency,Every 8 episodes
+Target update,Hard copy every 100 learning steps
+Episodes / seed,5000
+Seeds,"[0, 1, 2, 3, 4]"
+Epsilon schedule,Linear 1.00 -> 0.05 through episode 4000; then 0.05
+Evaluation episodes / seed,1000
